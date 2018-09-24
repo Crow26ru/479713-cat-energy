@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Семен Оробинский](https://up.htmlacademy.ru/adaptive/15/user/479713).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов].
 
 ---
 
