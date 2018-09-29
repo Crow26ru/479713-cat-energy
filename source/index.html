@@ -7,12 +7,12 @@
   <body>
     <header class="header-page">
       <h1 class="visually-hidden">Интернет-магазин Cat Enegry</h1>
-      <img class="logo--small header-page__logo" src="http://placehold.it/150x100" height="18" width="18" alt="Логотип Cat Energy">
-      <img class="logo header-page__logo no-js--top-menu" src="http://placehold.it/150x100" height="18" width="100" alt="Cat Energy">
-      <button class="header-page__close-menu no-js--menu" type="button">Закрыть</button>
+      <img class="logo logo--small header-page__logo" src="http://placehold.it/150x100" height="18" width="18" alt="Логотип Cat Energy">
+      <img class="logo header-page__logo" src="http://placehold.it/150x100" height="18" width="100" alt="Cat Energy">
+      <button class="header-page__close-menu no-js-menu" type="button">Закрыть</button>
       <nav class="navigation header-page__navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link--active">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--active">Главная</a></li>
           <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог продукции</a></li>
           <li class="navigation__item"><a href="form.html" class="navigation__link">Подбор программы</a></li>
         </ul>
@@ -24,7 +24,7 @@
         <p class="intro__text">Занялся собой? Займись котом!</p>
         <!--Зеленый background с изображением кота сделаю пвсевдоэлементом с абсолютным позиционированием.-->
         <img class="intro__image" src="http://placehold.it/150x100" height="270" width="280" alt="Кошачий корм Cat Energy Pro со вкусом курицы">
-        <a href="form.html" class="btn intro__btn">Подобрать программу</a>
+        <a class="btn intro__btn" href="form.html">Подобрать программу</a>
       </section>
       <section class="programs content__programs">
         <h2 class="visually-hidden">Виды программ кошачего питания</h2>
@@ -67,13 +67,13 @@
         <button class="example__btn" type="button">Было</button>
         <span class="example__range"></span>
         <!--Зелёная полосочка будет сделана пвсеводэлементом span::before-->
-        <button class="example__btn--after" type="button">Стало</button>
+        <button class="example__btn example__btn--after" type="button">Стало</button>
       </section>
       <section class="map content__map">
         <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img class="map__image no-js" src="http://placehold.it/150x100" height="360" width="320" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
-        <iframe class="map__interactive-map no-js--interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716329727!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538136976731" height="360" width="320"></iframe>
+        <iframe class="map__interactive-map no-js-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858716329727!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538136976731" height="360" width="320"></iframe>
       </section>
     </main>
     <footer class="footer-page">
