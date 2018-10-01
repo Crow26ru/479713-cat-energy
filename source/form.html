@@ -2,72 +2,95 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Cat Energy - Главная</title>
+    <title>Cat Energy - Подбор программы</title>
   </head>
   <body>
     <header class="header-page">
-      <h1 class="visually-hidden">Интернет-магазин Cat Enegry</h1>
       <img class="logo logo--small header-page__logo" src="http://placehold.it/150x100" height="18" width="18" alt="Логотип Cat Energy">
       <img class="logo header-page__logo" src="http://placehold.it/150x100" height="18" width="100" alt="Cat Energy">
       <button class="header-page__close-menu no-js-menu" type="button">Закрыть</button>
       <nav class="navigation header-page__navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link navigation__link--active">Главная</a></li>
-          <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог продукции</a></li>
-          <li class="navigation__item"><a href="form.html" class="navigation__link">Подбор программы</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item navigation__item--active"><a class="navigation__link">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main class="content">
+      <h1 class="content__title">Подбор программмы</h1>
       <section class="intro content__intro">
-        <h2 class="intro__title">Функциональное питание для котов</h2>
-        <p class="intro__text">Занялся собой? Займись котом!</p>
-        <!--Зеленый background с изображением кота сделаю пвсевдоэлементом с абсолютным позиционированием.-->
-        <img class="intro__image" src="http://placehold.it/150x100" height="270" width="280" alt="Кошачий корм Cat Energy Pro со вкусом курицы">
-        <a class="btn intro__btn" href="form.html">Подобрать программу</a>
-      </section>
-      <section class="programs content__programs">
-        <h2 class="visually-hidden">Виды программ кошачьего питания</h2>
-        <section class="slim programs__slim">
-          <!--Декоративную картинку вставлю пвсевдоэлементом h3::before-->
-          <h3 class="slim__title">Похудение</h3>
-          <p class="slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="slim__link" href="#">Каталог Slim</a>
-          <!--Стрелку вставлю пвсевдоэлементом a::after-->
-        </section>
-        <section class="weight programs__weight">
-          <!--Декоративную картинку вставлю пвсевдоэлементом h3::before-->
-          <h3 class="weight__title">Набор массы</h3>
-          <p class="weight_description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="weight__link" href="#">Каталог Pro</a>
-          <!--Стрелку вставлю пвсевдоэлементом a::after-->
-        </section>
-      </section>
-      <section class="description content__description">
-        <h2 class="description__title">Как это работает</h2>
-        <p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
-        <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        <!--Иконки вставлю пвсевдоэлементами p::before-->
-      </section>
-      <section class="example content__example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="cell example__left-cell">
-          <b class="cell__bold">5 кг</b>
-          <span class="cell__small">снижение веса</span>
-        </div>
-        <div class="cell example__right-cell">
-          <b class="cell__bold">60 дней</b>
-          <span class="cell__small">затрачено дней</span>
-        </div>
-        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-        <img class="example__image" src="http://placehold.it/150x100" height="230" width="310" alt="Фотография кота Бориса до похудения">
-        <button class="example__btn" type="button">Было</button>
-        <span class="example__range"></span>
-        <!--Зелёная полосочка будет сделана пвсеводэлементом span::before-->
-        <button class="example__btn example__btn--after" type="button">Стало</button>
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="intro__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="form intro__input-data" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form__wrapper">
+            <label class="form__label form__label--name" for="cat-name">Имя:<span class="form__requred">*</span></label>
+            <input class="form__input form__input--name" id="cat-name" name="cat-name" type="text" value="Барсик" required>
+          </p>
+          <p class="form__wrapper">
+            <label class="form__label form__label--weight" for="cat-weight">Вес (кг):<span class="form__requred">*</span></label>
+            <input class="form__input form__input--weight" id="cat-weight" name="cat-weight" type="text" value="7" required>
+          </p>
+          <p class="form__wrapper">
+            <label class="form__label form__label--old" for="cat-old">Возраст (лет):</label>
+            <input class="form__input form__input--old" id="cat-old" name="cat-old" type="text" value="7">
+          </p>
+          <p class="form__wrapper">
+            <input class="form__radio visually-hidden" id="slim" name="program" type="radio" value="slim" checked>
+            <span class="form__custom-radio"></span>
+            <label class="form__label form__label--slim" for="slim">Похудение</label>
+          </p>
+          <p class="form__wrapper">
+            <input class="form__radio visually-hidden" id="weight" name="program" type="radio" value="weight">
+            <span class="form__custom-radio"></span>
+            <label class="form__label form__label--weight" for="weight">Набор массы</label>
+          </p>
+          <p class="form__wrapper">
+            <input class="form__radio visually-hidden" id="undefined" name="program" type="radio" value="undefined">
+            <span class="form__custom-radio"></span>
+            <label class="form__label form__label--undefined" for="undefined">Я не знаю (нужен ваш совет)</label>
+          </p>
+          <fieldset class="form__fieldset form__fieldset--contact">
+            <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
+            <p class="form__wrapper">
+              <label class="form__label form__label--email" for="email">E-mail:<span class="form__requred">*</span></label>
+              <input class="form__input form__input--email" id="email" name="email" type="email" value="kuklachev@gmail.com" required>
+            </p>
+            <p class="form__wrapper">
+              <label class="form__label form__label--phone" for="phone">Телефон:<span class="form__requred">*</span></label>
+              <input class="form__input form__input--phone" id="phone" name="phone" type="tel" value="8 (600) 900-60-90" required>
+            </p>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--comment">
+            <legend class="form__legend">Комментарий</legend>
+            <textarea class="form__comment" rows="6" cols="30" name="comment">Расскажите о повадках кота</textarea>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--bonus">
+            <legend class="form__legend">Дополнительно</legend>
+            <p class="form__wrapper">
+              <input class="form__checkbox visually-hidden" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
+              <span class="form__custom-checkbox"></span>
+              <label class="form__label form__label--shugar-switch" for="shugar-switch">Сахарозаменитель</label>
+            </p>
+            <p class="form__wrapper">
+              <input class="form__checkbox visually-hidden" id="water" name="water" type="checkbox">
+              <span class="form__custom-checkbox"></span>
+              <label class="form__label form__label--water" for="water">Питьевая вода</label>
+            </p>
+            <p class="form__wrapper">
+              <input class="form__checkbox visually-hidden" id="milk" name="milk" type="checkbox">
+              <span class="form__custom-checkbox"></span>
+              <label class="form__label form__label--milk" for="milk">Молоко</label>
+            </p>
+            <p class="form__wrapper">
+              <input class="form__checkbox visually-hidden" id="vita" name="vita" type="checkbox">
+              <span class="form__custom-checkbox"></span>
+              <label class="form__label form__label--vita" for="vita">Витамины</label>
+            </p>
+          </fieldset>
+          <button class="btn form__btn" type="submit">Отправить заявку</button>
+          <p class="form__text"><span class="form__requred">*</span> &mdash; Обязательные поля</p>
+        </form>
       </section>
       <section class="map content__map">
         <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
@@ -82,8 +105,8 @@
       </div>
       <section class="social footer-page__social">
         <h2 class="visually-hidden">Страницы Cat Energy в социальных сетях</h2>
-        <a class="vk social__link href="#"">Мы во ВКонтакте</a>
-        <a class="instagram social__link href="#"">Мы в Instagram</a>
+        <a class="vk social__link" href="#">Мы во ВКонтакте</a>
+        <a class="instagram social__link" href="#">Мы в Instagram</a>
         <a class="facebook social__link href="#"">Мы в Facebook</a>
       </section>
       <section class="author footer-page__author">
@@ -103,8 +126,8 @@
             <path d="M413.19,337.58v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0, 0,1,2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32, 3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17, 1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11, 3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
             <rect x="74.72" y="1.52" width="1.95" height="12.76" fill="#231f20"/>
             <path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37, 362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87, 0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11, 5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68, 1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7, 0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82, 13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28, 1.39v10.51Z" transform="translate(-355.09 -323.29)" fill="#231f20"/>
-            </svg>
-          </a>
+          </svg>
+        </a>
       </section>
     </footer>
   </body>
