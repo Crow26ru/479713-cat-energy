@@ -1,0 +1,33 @@
+.map {
+  background-color: #ffffff;
+}
+
+.map__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16x;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;  
+}
+
+.map__address {
+  line-height: 20px;
+  color: #111111;
+}
+
+.map__image {
+  position: relative;
+  
+  display: block;
+  height: 400px;
+  width: 320px;
+  &::after {
+    content: "";
+    
+    /*тут должен быть map_pin.png*/
+  }
+}
+
+.map__interactive-map {
+  
+}
