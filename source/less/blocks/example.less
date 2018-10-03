@@ -36,12 +36,25 @@
 
 .example__btn {
   border: none;
+  border-bottom: 1px dashed #bebebe;
   
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   
   background-color: inherit;
+  
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #989898;
+    
+    outline: 0;
+  }
+  &:active {
+    border-bottom: none;
+    
+    outline: 0;
+  }
   &--after {
     
   }
