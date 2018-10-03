@@ -7,7 +7,9 @@
   </head>
   <body>
     <header class="header-page">
-      <img class="logo header-page__logo" src="img/logo-mobile.svg" height="38" width="191" alt="Cat Energy">
+      <a class="header-page__logo header-page__logo--link" href="index.html">
+        <img class="logo header-page__logo" src="img/logo-mobile.svg" height="38" width="191" alt="Cat Energy">
+      </a>
       <button class="header-page__menu" type="button">Закрыть</button>
       <nav class="navigation header-page__navigation">
         <ul class="navigation__list">
@@ -36,19 +38,19 @@
             <input class="form__input form__input--old" id="cat-old" name="cat-old" type="text" value="7">
           </p>
           <p class="form__wrapper">
-            <input class="form__input form__input--radio visually-hidden" id="slim" name="program" type="radio" value="slim" checked>
+            <input class="form__input form__input--radio" id="slim" name="program" type="radio" value="slim" checked>
             <span class="form__custom-radio"></span>
-            <label class="form__label form__label--slim" for="slim">Похудение</label>
+            <label class="form__label form__label--radio" for="slim">Похудение</label>
           </p>
           <p class="form__wrapper">
-            <input class="form__input form__input--radio visually-hidden" id="weight" name="program" type="radio" value="weight">
+            <input class="form__input form__input--radio" id="weight" name="program" type="radio" value="weight">
             <span class="form__custom-radio"></span>
-            <label class="form__label form__label--weight" for="weight">Набор массы</label>
+            <label class="form__label form__label--radio" for="weight">Набор массы</label>
           </p>
           <p class="form__wrapper">
-            <input class="form__input form__input--radio visually-hidden" id="undefined" name="program" type="radio" value="undefined">
+            <input class="form__input form__input--radio" id="undefined" name="program" type="radio" value="undefined">
             <span class="form__custom-radio"></span>
-            <label class="form__label form__label--undefined" for="undefined">Я не знаю (нужен ваш совет)</label>
+            <label class="form__label form__label--radio" for="undefined">Я не знаю (нужен ваш совет)</label>
           </p>
           <fieldset class="form__fieldset form__fieldset--contact">
             <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
@@ -68,24 +70,24 @@
           <fieldset class="form__fieldset form__fieldset--bonus">
             <legend class="form__legend">Дополнительно</legend>
             <p class="form__wrapper">
-              <input class="form__input form__input--checkbox visually-hidden" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
+              <input class="form__input form__input--checkbox" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
               <span class="form__custom-checkbox"></span>
-              <label class="form__label form__label--shugar-switch" for="shugar-switch">Сахарозаменитель</label>
+              <label class="form__label form__label--checkbox" for="shugar-switch">Сахарозаменитель</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__input form__input--checkbox visually-hidden" id="water" name="water" type="checkbox">
+              <input class="form__input form__input--checkbox" id="water" name="water" type="checkbox">
               <span class="form__custom-checkbox"></span>
-              <label class="form__label form__label--water" for="water">Питьевая вода</label>
+              <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__input form__input--checkbox visually-hidden" id="milk" name="milk" type="checkbox">
+              <input class="form__input form__input--checkbox" id="milk" name="milk" type="checkbox">
               <span class="form__custom-checkbox"></span>
-              <label class="form__label form__label--milk" for="milk">Молоко</label>
+              <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__input form__input--checkbox visually-hidden" id="vita" name="vita" type="checkbox">
+              <input class="form__input form__input--checkbox" id="vita" name="vita" type="checkbox">
               <span class="form__custom-checkbox"></span>
-              <label class="form__label form__label--vita" for="vita">Витамины</label>
+              <label class="form__label form__label--checkbox" for="vita">Витамины</label>
             </p>
           </fieldset>
           <button class="button form__buttton" type="submit">Отправить заявку</button>
@@ -103,7 +105,9 @@
     </main>
     <footer class="footer-page">
       <div class="footer-page__logo-wrapper">
-        <img class="logo footer-page__logo" src="img/logo-footer.svg" height="24" width="128" alt="Cat Energy">
+        <a class="footer-page__logo footer-page__logo--link" href="index.html">
+          <img class="logo footer-page__logo" src="img/logo-footer.svg" height="24" width="128" alt="Cat Energy">
+        </a>
       </div>
       <section class="social footer-page__social">
         <h2 class="visually-hidden">Страницы Cat Energy в социальных сетях</h2>
