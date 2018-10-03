@@ -19,10 +19,10 @@
     </header>
     <main class="content">
       <h1 class="content__title">Подбор программмы</h1>
-      <section class="intro content__intro">
+      <section class="intro-form content__intro-form">
         <h2 class="visually-hidden">Анкета</h2>
-        <p class="intro__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="form intro__input-data" action="https://echo.htmlacademy.ru" method="post">
+        <p class="intro-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="form intro-form__input-data" action="https://echo.htmlacademy.ru" method="post">
           <p class="form__wrapper">
             <label class="form__label form__label--name" for="cat-name">Имя:<span class="form__requred">*</span></label>
             <input class="form__input form__input--name" id="cat-name" name="cat-name" type="text" value="Барсик" required>
@@ -36,17 +36,17 @@
             <input class="form__input form__input--old" id="cat-old" name="cat-old" type="text" value="7">
           </p>
           <p class="form__wrapper">
-            <input class="form__radio visually-hidden" id="slim" name="program" type="radio" value="slim" checked>
+            <input class="form__input form__input--radio visually-hidden" id="slim" name="program" type="radio" value="slim" checked>
             <span class="form__custom-radio"></span>
             <label class="form__label form__label--slim" for="slim">Похудение</label>
           </p>
           <p class="form__wrapper">
-            <input class="form__radio visually-hidden" id="weight" name="program" type="radio" value="weight">
+            <input class="form__input form__input--radio visually-hidden" id="weight" name="program" type="radio" value="weight">
             <span class="form__custom-radio"></span>
             <label class="form__label form__label--weight" for="weight">Набор массы</label>
           </p>
           <p class="form__wrapper">
-            <input class="form__radio visually-hidden" id="undefined" name="program" type="radio" value="undefined">
+            <input class="form__input form__input--radio visually-hidden" id="undefined" name="program" type="radio" value="undefined">
             <span class="form__custom-radio"></span>
             <label class="form__label form__label--undefined" for="undefined">Я не знаю (нужен ваш совет)</label>
           </p>
@@ -63,32 +63,32 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__comment" rows="6" cols="30" name="comment">Расскажите о повадках кота</textarea>
+            <textarea class="form__comment" rows="6" cols="30" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--bonus">
             <legend class="form__legend">Дополнительно</legend>
             <p class="form__wrapper">
-              <input class="form__checkbox visually-hidden" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
+              <input class="form__input form__input--checkbox visually-hidden" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--shugar-switch" for="shugar-switch">Сахарозаменитель</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__checkbox visually-hidden" id="water" name="water" type="checkbox">
+              <input class="form__input form__input--checkbox visually-hidden" id="water" name="water" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--water" for="water">Питьевая вода</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__checkbox visually-hidden" id="milk" name="milk" type="checkbox">
+              <input class="form__input form__input--checkbox visually-hidden" id="milk" name="milk" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--milk" for="milk">Молоко</label>
             </p>
             <p class="form__wrapper">
-              <input class="form__checkbox visually-hidden" id="vita" name="vita" type="checkbox">
+              <input class="form__input form__input--checkbox visually-hidden" id="vita" name="vita" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--vita" for="vita">Витамины</label>
             </p>
           </fieldset>
-          <button class="btn form__btn" type="submit">Отправить заявку</button>
+          <button class="button form__buttton" type="submit">Отправить заявку</button>
           <p class="form__text"><span class="form__requred">*</span> &mdash; Обязательные поля</p>
         </form>
       </section>
