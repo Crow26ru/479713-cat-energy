@@ -25,33 +25,37 @@
         <h2 class="visually-hidden">Анкета</h2>
         <p class="intro-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form intro-form__input-data" action="https://echo.htmlacademy.ru" method="post">
-          <p class="form__wrapper">
-            <label class="form__label form__label--name" for="cat-name">Имя:<span class="form__requred">*</span></label>
-            <input class="form__input form__input--name" id="cat-name" name="cat-name" type="text" value="Барсик" required>
-          </p>
-          <p class="form__wrapper">
-            <label class="form__label form__label--weight" for="cat-weight">Вес (кг):<span class="form__requred">*</span></label>
-            <input class="form__input form__input--weight" id="cat-weight" name="cat-weight" type="text" value="7" required>
-          </p>
-          <p class="form__wrapper">
-            <label class="form__label form__label--old" for="cat-old">Возраст (лет):</label>
-            <input class="form__input form__input--old" id="cat-old" name="cat-old" type="text" value="7">
-          </p>
-          <p class="form__wrapper">
-            <input class="form__input form__input--radio" id="slim" name="program" type="radio" value="slim" checked>
-            <span class="form__custom-radio"></span>
-            <label class="form__label form__label--radio" for="slim">Похудение</label>
-          </p>
-          <p class="form__wrapper">
-            <input class="form__input form__input--radio" id="weight" name="program" type="radio" value="weight">
-            <span class="form__custom-radio"></span>
-            <label class="form__label form__label--radio" for="weight">Набор массы</label>
-          </p>
-          <p class="form__wrapper">
-            <input class="form__input form__input--radio" id="undefined" name="program" type="radio" value="undefined">
-            <span class="form__custom-radio"></span>
-            <label class="form__label form__label--radio" for="undefined">Я не знаю (нужен ваш совет)</label>
-          </p>
+          <div class="form__cat-info">
+            <p class="form__wrapper">
+              <label class="form__label form__label--name" for="cat-name">Имя:<span class="form__requred">*</span></label>
+              <input class="form__input form__input--text" id="cat-name" name="cat-name" type="text" value="Барсик" required>
+            </p>
+            <p class="form__wrapper">
+              <label class="form__label form__label--weight" for="cat-weight">Вес (кг):<span class="form__requred">*</span></label>
+              <input class="form__input form__input--text" id="cat-weight" name="cat-weight" type="text" value="7" required>
+            </p>
+            <p class="form__wrapper">
+              <label class="form__label form__label--old" for="cat-old">Возраст (лет):</label>
+              <input class="form__input form__input--text" id="cat-old" name="cat-old" type="text" value="7">
+            </p>
+          </div>
+          <div class="form__program">
+            <p class="form__wrapper form__wrapper--program">
+              <input class="form__input form__input--radio" id="slim" name="program" type="radio" value="slim" checked>
+              <span class="form__custom-radio"></span>
+              <label class="form__label form__label--radio" for="slim">Похудение</label>
+            </p>
+            <p class="form__wrapper form__wrapper--program">
+                <input class="form__input form__input--radio" id="weight" name="program" type="radio" value="weight">
+                <span class="form__custom-radio"></span>
+                <label class="form__label form__label--radio" for="weight">Набор массы</label>
+            </p>
+            <p class="form__wrapper form__wrapper--program">
+              <input class="form__input form__input--radio" id="undefined" name="program" type="radio" value="undefined">
+              <span class="form__custom-radio"></span>
+              <label class="form__label form__label--radio" for="undefined">Я не знаю (нужен ваш совет)</label>
+            </p>
+          </div>
           <fieldset class="form__fieldset form__fieldset--contact">
             <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
             <p class="form__wrapper">
