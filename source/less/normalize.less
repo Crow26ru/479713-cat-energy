@@ -58,7 +58,7 @@ template {
 //  * Remove the gray background color from active links in IE 10.
 a {
   background: transparent;
-	//  * Improve readability when focused and also mouse hovered in all browsers.
+  //  * Improve readability when focused and also mouse hovered in all browsers.
   &:active,
   &:hover {
     outline: 0;
@@ -112,6 +112,7 @@ sup {
 sup {
   top: -0.5em;
 }
+
 sub {
   bottom: -0.25em;
 }
@@ -135,8 +136,8 @@ figure {
 
 //  * Address differences between Firefox and other browsers.
 hr {
-	box-sizing: content-box;
-	height: 0;
+  box-sizing: content-box;
+  height: 0;
 }
 
 //  * Contain overflow in all browsers.
@@ -149,7 +150,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -202,10 +203,12 @@ html input[disabled] {
 //  * Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet.
 input {
   line-height: normal;
+  
   &[type="reset"],
   &[type="submit"] {
     cursor: pointer;
   }
+  
   &[type="checkbox"],
   &[type="radio"] {
     box-sizing: border-box;
