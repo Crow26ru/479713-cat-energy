@@ -16,6 +16,17 @@
   &--program {
     padding-left: 45px;
   }
+  
+  &--contact,
+  &--bonus {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  &--bonus {
+    padding-left: 45px;
+    margin-bottom: 24px;
+  }
 }
 
 .form__label {
@@ -24,8 +35,10 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  
   &--radio,
   &--checkbox {
+    
     &:active {
       color: fade(#222222, 30%);
     }
@@ -40,7 +53,9 @@
   text-transform: uppercase;
   color: #222222;
   
-  &--text {
+  &--text,
+  &--email,
+  &--phone {
     flex-grow: 1;
     margin-left: 16px;
     padding-top: 12px;
@@ -50,12 +65,13 @@
   }
   
   &--email {
-    flex-grow: 1;
+    margin-left: 12px;
   }
   
   &--phone {
-    flex-grow: 1;
+    margin-left: 10px;
   }
+  
 }
 
 .form__program {
@@ -74,20 +90,47 @@
 }
 
 .form__fieldset {
-  margin: 0 20px;
+  margin: 30px 20px;
   padding: 0;
+  border: none;
   
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
+  
+  &--contact,
+  &--comment,
+  &--bonus {
+    padding-top: 32px;
+  }
+  
+  &--bonus {
+    margin-bottom: 18px;
+  }
 }
 
-.form__btn {
-  
+.form__comment {
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  min-height: 148px;
+}
+
+.form__button {
+  display: block;
+  margin-bottom: 22px;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .form__text {
+  margin: 0;
+  
   text-align: center;
+}
+
+.form__bottom {
+  margin: 0 20px;
 }

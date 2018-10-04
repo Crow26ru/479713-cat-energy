@@ -58,47 +58,49 @@
           </div>
           <fieldset class="form__fieldset form__fieldset--contact">
             <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--contact">
               <label class="form__label form__label--email" for="email">E-mail:<span class="form__requred">*</span></label>
               <input class="form__input form__input--email" id="email" name="email" type="email" value="kuklachev@gmail.com" required>
             </p>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--contact">
               <label class="form__label form__label--phone" for="phone">Телефон:<span class="form__requred">*</span></label>
               <input class="form__input form__input--phone" id="phone" name="phone" type="tel" value="8 (600) 900-60-90" required>
             </p>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--comment">
             <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__comment" rows="6" cols="30" name="comment">Расскажите обо всех повадках кота</textarea>
+            <textarea class="form__comment" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--bonus">
             <legend class="form__legend">Дополнительно</legend>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--bonus">
               <input class="form__input form__input--checkbox" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--checkbox" for="shugar-switch">Сахарозаменитель</label>
             </p>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--bonus">
               <input class="form__input form__input--checkbox" id="water" name="water" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
             </p>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--bonus">
               <input class="form__input form__input--checkbox" id="milk" name="milk" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             </p>
-            <p class="form__wrapper">
+            <p class="form__wrapper form__wrapper--bonus">
               <input class="form__input form__input--checkbox" id="vita" name="vita" type="checkbox">
               <span class="form__custom-checkbox"></span>
               <label class="form__label form__label--checkbox" for="vita">Витамины</label>
             </p>
           </fieldset>
-          <button class="button form__buttton" type="submit">Отправить заявку</button>
-          <p class="form__text"><span class="form__requred">*</span> &mdash; Обязательные поля</p>
+          <div class="form__bottom">
+            <button class="button form__button" type="submit">Отправить заявку</button>
+            <p class="form__text"><span class="form__requred">*</span> &mdash; Обязательные поля</p>
+          </div>
         </form>
       </section>
-      <section class="map content__map">
+      <section class="map map--bg-color content__map">
         <div class="map_wrapper-text">
           <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
