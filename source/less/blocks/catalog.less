@@ -1,6 +1,3 @@
-.catalog {
-}
-
 .catalog__title {
   margin: 0;
   margin-left: 20px;
@@ -29,12 +26,15 @@
   padding-bottom: 24px;
   border: 1px solid #d9d9d9;
   border-bottom: none;
+
   &:last-of-type {
     border-bottom: 1px solid #d9d9d9;
   }
+
   &:nth-of-type(odd) {
     outline: 5px solid gray;
   }
+
   &:nth-of-type(even) {
     outline: 5px solid red;
   }
@@ -46,15 +46,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
   &:hover,
   &:focus {
     color: fade(#111111, 60%);
   }
+
   &--image {
     display: block;
     flex-basis: 50%;
-  }
-  &--title {
   }
 }
 
