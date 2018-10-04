@@ -2,8 +2,20 @@
   
 }
 
+.form__cat-info {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ededed;
+}
+
 .form__wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 14px;
   
+  &--program {
+    padding-left: 45px;
+  }
 }
 
 .form__label {
@@ -27,6 +39,29 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  
+  &--text {
+    flex-grow: 1;
+    margin-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    border: 1px solid #e6e6e6;
+  }
+  
+  &--email {
+    flex-grow: 1;
+  }
+  
+  &--phone {
+    flex-grow: 1;
+  }
+}
+
+.form__program {
+  padding-top: 25px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .form__comment {
@@ -39,6 +74,9 @@
 }
 
 .form__fieldset {
+  margin: 0 20px;
+  padding: 0;
+  
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
