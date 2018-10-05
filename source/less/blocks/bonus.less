@@ -1,0 +1,31 @@
+.bonus {
+  position: relative;
+  min-height: 289px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: -1;
+    display: block;
+    height: 289px;
+    width: 280px;
+    background-color: #64a83b;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.bonus__text {
+  margin: 0;
+  padding-top: 185px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}

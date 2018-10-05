@@ -1,0 +1,28 @@
+.description__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.description__text {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: #68b738;
+  }
+}
