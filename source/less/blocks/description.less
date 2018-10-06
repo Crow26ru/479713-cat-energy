@@ -26,3 +26,35 @@
     background-color: #68b738;
   }
 }
+
+@media (min-width: 768px) {
+  .description {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;  
+  }
+  
+  .description__title {
+    width: 100%;
+  }
+  
+  .description__text {
+    width: 354px;
+    padding-left: 0;
+    padding-top: 110px;
+    
+    &--leaf,
+    &--powder {
+      margin-bottom: 140px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .description__text {
+    width: 245px;
+    margin-bottom: 0;
+  }
+}
