@@ -1,5 +1,9 @@
 .extra-item {
   border-bottom: 1px solid #d9d9d9;
+  
+  &:first-of-type {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .extra-item__title {
@@ -27,5 +31,108 @@
 
   &:nth-of-type(even) {
     text-align: right;
+  }
+}
+
+.extra-item__bonus {
+  position: relative;
+  min-height: 289px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 5px solid green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: -1;
+    display: block;
+    height: 289px;
+    width: 280px;
+    background-color: #64a83b;
+    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.extra-item__order {
+  margin: 0;
+  padding-top: 185px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .extra-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .extra-item__title,
+  .extra-item__properties {
+    width: 287px;
+  }
+  
+  .extra-item__btn {
+    width: 100%;
+  }
+  
+  .extra-item__coll {
+    text-align: right;
+    
+    &:last-of-type {
+      width: 95px;
+    }
+  }
+  
+  .extra-item__bonus {
+    padding-left: 0;
+    
+    &::before {
+      left: 0;
+    }
+  }
+  
+  .extra-item__order {
+    padding-top: 40px;
+    padding-left: 420px;
+    width: 165px;
+    text-align: left;
+    color: black;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra-item__btn {
+    width: 245px;
+  }
+  
+  .extra-item__bonus {
+    margin: 0;
+    width: 245px;
+  }
+  
+  .extra-item__order {
+    padding: 0;
+  }
+  
+  .extra-item__properties {
+    width: 285px;
+  }
+  
+  .extra-item__coll {
+    text-align: left;
   }
 }
