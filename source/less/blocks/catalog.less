@@ -1,6 +1,9 @@
+.catalog {
+  width: 280px;
+}
+
 .catalog__title {
   margin: 0;
-  margin-left: 20px;
   padding-bottom: 31px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -21,8 +24,6 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 0;
-  padding-left: 19px;
-  padding-right: 19px;
   padding-bottom: 24px;
   border: 1px solid #d9d9d9;
   border-bottom: none;
@@ -65,7 +66,7 @@
 }
 
 .catalog__card-wrapper {
-  flex-basis: 50%;
+  flex-basis: 138px;
 }
 
 .catalog__btn {
@@ -98,8 +99,8 @@
 }
 
 @media (min-width: 768px) {
-  .catalog__title {
-    margin: 0 30px;
+  .catalog {
+    width: 708px;
   }
 
   .catalog__list {
@@ -109,8 +110,6 @@
     flex-wrap: wrap;
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 0 30px;
-    width: 708px;
   }
 
   .catalog__item {
@@ -127,12 +126,7 @@
 }
 
 @media (min-width: 1440px) {
-  .catalog__title,
-  .catalog__list {
-    margin: 0 110px;
-  }
-
-  .catalog__list {
+  .catalog {
     width: 1220px;
   }
 
