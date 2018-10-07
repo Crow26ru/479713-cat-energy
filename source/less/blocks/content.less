@@ -13,19 +13,14 @@
 
 .content__intro {
   padding-top: 30px;
-  outline: 5px solid green;
 }
 
 .content__programs {
   padding-top: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
   outline: 5px solid green;
 }
 
 .content__description {
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 22px;
   padding-bottom: 42px;
   outline: 5px solid green;
@@ -33,7 +28,6 @@
 
 .content__example {
   padding-top: 22px;
-  outline: 5px solid green;
 }
 
 .content__map {
@@ -61,14 +55,25 @@
   outline: 5px solid blue;
 }
 
+.content__programs,
+.content__example,
+.content__description,
+.content__map,
+.content__extra-products,
+.content__title,
+.content__intro-form {
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
-  .content__intro,
   .content__programs,
+  .content__example,
   .content__description,
+  .content__map,
   .content__extra-products,
   .content__title,
   .content__intro-form {
-    margin: 0 30px;
+    margin: 0 auto;
   }
 
   .content__programs {
@@ -82,13 +87,14 @@
 }
 
 @media (min-width: 1440px) {
-  .content__intro,
   .content__programs,
+  .content__example,
   .content__description,
+  .content__map,
   .content__extra-products,
   .content__title,
   .content__intro-form {
-    margin: 0 110px;
+    margin: 0 auto;
   }
 
   .content__map {

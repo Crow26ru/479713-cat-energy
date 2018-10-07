@@ -1,6 +1,12 @@
 .intro {
   position: relative;
+}
 
+.intro__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 5px solid red;
+  
   &::before {
     content: "";
     position: absolute;
@@ -10,9 +16,10 @@
     display: block;
     min-height: 305px;
     width: 100%;
-    background-color: #67ab3e;
+    background-color: #65a93c;
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -43,10 +50,11 @@
 }
 
 @media (min-width: 768px) {
-  .intro {
+  .intro__wrapper {
     display: flex;
     flex-direction: column;
-
+    width: 708px;
+    
     &::before {
       display: none;
     }
@@ -74,6 +82,7 @@
 
   .intro__btn {
     margin: 0;
+    margin-left: 90px;
     width: 245px;
     height: 52px;
   }
@@ -83,5 +92,11 @@
     z-index: -1;
     margin-top: -55px;
     order: 1;
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro__wrapper {
+    width: 1220px;
   }
 }
