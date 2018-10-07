@@ -1,9 +1,10 @@
+.extra-products {
+  width: 280px;
+}
+
 .extra-products__title {
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -12,7 +13,6 @@
 }
 
 .extra-products__list {
-  margin: 0 20px;
   padding: 0;
   list-style: none;
 }
@@ -20,4 +20,30 @@
 .extra-products__extra-item {
   padding-top: 13px;
   padding-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .extra-products {
+    width: 708px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1220px;
+  }
+
+  .extra-products__title {
+    width: 100%;
+  }
+
+  .extra-products__list {
+    width: 895px;
+  }
 }

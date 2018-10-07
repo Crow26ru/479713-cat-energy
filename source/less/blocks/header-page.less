@@ -1,8 +1,12 @@
+.header-page {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .header-page__logo {
   display: block;
   padding-top: 14px;
   padding-bottom: 13px;
-  padding-left: 20px;
   border-bottom: 1px solid #e6e6e6;
   outline: 5px solid brown;
 
@@ -26,4 +30,29 @@
 
 .header-page__navigation {
   outline: 5px solid yellow;
+}
+
+@media (min-width: 768px) {
+  .header-page {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 708px;
+  }
+
+  .header-page__logo {
+    width: 192px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-page {
+    width: 1220px;
+  }
+
+  .header-page__logo {
+    width: 202px;
+  }
 }
