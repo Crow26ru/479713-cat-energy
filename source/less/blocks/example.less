@@ -46,12 +46,15 @@
 }
 
 .example__btn {
+  margin-left: 37px;
+  width: 50px;
   border: none;
   border-bottom: 1px dashed #bebebe;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  background-color: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -63,6 +66,23 @@
     border-bottom: none;
     outline: 0;
   }
+
+  &--after {
+    margin-left: 9px;
+  }
+}
+
+.example__range {
+  display: inline-block;
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px; 
+  width: 82px;
+  height: 12px;
+  line-height: 0;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
