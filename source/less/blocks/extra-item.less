@@ -13,6 +13,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #111111;
 }
 
@@ -56,6 +57,20 @@
     background-image: url("../../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 113px;
+    z-index: 1;
+    display: block;
+    height: 60px;
+    width: 55px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 55px 60px;
   }
 }
 
