@@ -16,13 +16,13 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
-  padding-left: 100px;
+  padding-left: 80px;
   min-height: 60px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     display: block;
     height: 60px;
@@ -51,6 +51,8 @@
   }
 
   &--clock {
+    margin-bottom: 0;
+
     &::before {
       background-image: url("../../img/advantage-clock@1x.png");
     }
