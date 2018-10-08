@@ -3,7 +3,20 @@
   background-color: #ffffff;
 
   &--bg-color {
+    position: relative;
     background-color: #f2f2f2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc((100vw - 320px)/2*(-1));
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      background: #f2f2f2;
+    }
   }
 }
 
@@ -14,6 +27,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #111111;
 }
 
@@ -64,6 +78,10 @@
 @media (min-width: 768px) {
   .map {
     width: 768px;
+
+    &::before {
+      left: calc((100vw - 768px)/2*(-1));
+    }
   }
 
   .map__wrapper-text {
@@ -79,6 +97,10 @@
 @media (min-width: 1440px) {
   .map {
     width: 1440px;
+
+    &::before {
+      left: calc((100vw - 1440px)/2*(-1));
+    }
   }
 
   .map__wrapper-text {
