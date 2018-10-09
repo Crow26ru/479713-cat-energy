@@ -42,14 +42,15 @@
   position: relative;
   z-index: 0;
   display: block;
-  height: 400px;
+  height: 362px;
   width: 320px;
+  overflow: hidden;
 
   &::after {
     content: "";
     position: absolute;
-    top: 178px;
-    left: 130px;
+    top: 139px;
+    left: 129px;
     z-index: 1;
     display: block;
     height: 53px;
@@ -65,11 +66,14 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 0;
-  margin: 0 20px;
-  padding-bottom: 24px;
+  margin: 0 19px;
+  padding-bottom: 26px;
 }
 
 .map__image {
+  position: absolute;
+  top: -38px;
+  left: 0;
   display: block;
   height: 400px;
   width: 320px;
