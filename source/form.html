@@ -21,7 +21,7 @@
       </nav>
     </header>
     <main class="content">
-      <h1 class="content__title">Подбор программмы</h1>
+      <h1 class="content__title">Подбор программы</h1>
       <section class="intro-form content__intro-form">
         <h2 class="visually-hidden">Анкета</h2>
         <p class="intro-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -29,11 +29,11 @@
           <div class="form__cat-info">
             <p class="form__wrapper">
               <label class="form__label form__label--name" for="cat-name">Имя:<span class="form__requred">*</span></label>
-              <input class="form__input form__input--text" id="cat-name" name="cat-name" type="text" value="Барсик" required>
+              <input class="form__input form__input--text form__input--name" id="cat-name" name="cat-name" type="text" value="Барсик" required>
             </p>
             <p class="form__wrapper">
               <label class="form__label form__label--weight" for="cat-weight">Вес (кг):<span class="form__requred">*</span></label>
-              <input class="form__input form__input--text" id="cat-weight" name="cat-weight" type="text" value="7" required>
+              <input class="form__input form__input--text form__input--weight" id="cat-weight" name="cat-weight" type="text" value="7" required>
             </p>
             <p class="form__wrapper form__wrapper--last">
               <label class="form__label form__label--old" for="cat-old">Возраст (лет):</label>
@@ -42,19 +42,16 @@
           </div>
           <div class="form__program">
             <p class="form__wrapper form__wrapper--program">
-              <input class="form__input form__input--radio" id="slim" name="program" type="radio" value="slim" checked>
-              <span class="form__custom-radio"></span>
+              <input class="form__input form__input--radio visually-hidden" id="slim" name="program" type="radio" value="slim" checked>
               <label class="form__label form__label--radio" for="slim">Похудение</label>
             </p>
             <p class="form__wrapper form__wrapper--program">
-                <input class="form__input form__input--radio" id="weight" name="program" type="radio" value="weight">
-                <span class="form__custom-radio"></span>
+                <input class="form__input form__input--radio visually-hidden" id="weight" name="program" type="radio" value="weight">
                 <label class="form__label form__label--radio" for="weight">Набор массы</label>
             </p>
             <p class="form__wrapper form__wrapper--program">
-              <input class="form__input form__input--radio" id="undefined" name="program" type="radio" value="undefined">
-              <span class="form__custom-radio"></span>
-              <label class="form__label form__label--radio" for="undefined">Я не знаю (нужен ваш совет)</label>
+              <input class="form__input form__input--radio visually-hidden" id="undefined" name="program" type="radio" value="undefined">
+              <label class="form__label form__label--radio" for="undefined">Не знаю (нужен ваш совет)</label>
             </p>
           </div>
           <section class="form__fieldset form__fieldset--contact">
@@ -65,7 +62,7 @@
             </p>
             <p class="form__wrapper form__wrapper--contact">
               <label class="form__label form__label--phone" for="phone">Телефон:<span class="form__requred">*</span></label>
-              <input class="form__input form__input--phone" id="phone" name="phone" type="tel" value="8 (600) 900-60-90" required>
+              <input class="form__input form__input--phone" id="phone" name="phone" type="tel" value="8 (960) 900-60-90" required>
             </p>
           </section>
           <section class="form__fieldset form__fieldset--comment">
@@ -73,25 +70,21 @@
             <textarea class="form__comment" name="comment">Расскажите обо всех повадках кота</textarea>
           </section>
           <section class="form__fieldset form__fieldset--bonus">
-            <h3 class="form__legend">Дополнительно</h3>
+            <h3 class="form__legend form__legend--extend">Дополнительно</h3>
             <p class="form__wrapper form__wrapper--bonus">
-              <input class="form__input form__input--checkbox" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
-              <span class="form__custom-checkbox"></span>
+              <input class="form__input form__input--checkbox visually-hidden" id="shugar-switch" name="shugar-switch" type="checkbox" checked>
               <label class="form__label form__label--checkbox" for="shugar-switch">Сахарозаменитель</label>
             </p>
             <p class="form__wrapper form__wrapper--bonus">
-              <input class="form__input form__input--checkbox" id="water" name="water" type="checkbox">
-              <span class="form__custom-checkbox"></span>
+              <input class="form__input form__input--checkbox visually-hidden" id="water" name="water" type="checkbox">
               <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
             </p>
             <p class="form__wrapper form__wrapper--bonus">
-              <input class="form__input form__input--checkbox" id="milk" name="milk" type="checkbox">
-              <span class="form__custom-checkbox"></span>
+              <input class="form__input form__input--checkbox visually-hidden" id="milk" name="milk" type="checkbox">
               <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             </p>
             <p class="form__wrapper form__wrapper--bonus">
-              <input class="form__input form__input--checkbox" id="vita" name="vita" type="checkbox">
-              <span class="form__custom-checkbox"></span>
+              <input class="form__input form__input--checkbox visually-hidden" id="vita" name="vita" type="checkbox">
               <label class="form__label form__label--checkbox" for="vita">Витамины</label>
             </p>
           </section>
