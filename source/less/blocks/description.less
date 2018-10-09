@@ -59,30 +59,68 @@
       background-image: url("../../img/advantage-clock@1x.png");
     }
   }
+
+  &--clock br {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .description {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-grow: 0;
     flex-shrink: 0;
     flex-wrap: wrap;
+    border-bottom: 1px solid #e6e6e6;
     width: 708px;
   }
 
   .description__title {
+    margin-bottom: 74px;
     width: 100%;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .description__text {
     width: 354px;
     padding-left: 0;
     padding-top: 110px;
+    font-size: 16px;
+    line-height: 24px;
+
+     &::before {
+       width: 80px;
+       height: 80px;
+       background-position: 15px 15px;
+    }
+
+    &--leaf {
+      margin-right: 173px;
+      width: 210px;
+    }
+    
+    &--powder {
+      width: 250px;
+    }
+
+    &--dinin {
+      margin-right: 143px;
+      width: 240px;
+    }
+
+    &--clock {
+      width: 260px;
+    }
+
+    &--clock br {
+      display: block;
+    }
 
     &--leaf,
     &--powder {
-      margin-bottom: 140px;
+      margin-bottom: 135px;
     }
   }
 }

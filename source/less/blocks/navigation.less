@@ -50,13 +50,19 @@
   }
 
   .navigation__item {
-    font-size: 18px;
-    line-height: 24px;
+    border-bottom: none;
     text-transform: uppercase;
   }
 
   .navigation__link {
+    border-bottom: none;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    &--active {
+      box-shadow: 0 7px 0 0 #ffffff, -1px 10px 0 -1px #68b738;
+    }
   }
 }
 

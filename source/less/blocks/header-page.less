@@ -30,15 +30,21 @@
 @media (min-width: 768px) {
   .header-page {
     display: flex;
-    justify-content: space-between;
     flex-grow: 0;
     flex-shrink: 0;
     width: 708px;
+    padding-top: 20px;
   }
 
   .header-page__logo {
-    width: 192px;
+    margin-right: 96px;
     padding-left: 0;
+    width: 173px;
+    height: 58px;
+
+    &--link {
+      border-bottom: none;
+    }
   }
 }
 
@@ -48,6 +54,7 @@
   }
 
   .header-page__logo {
+    border-bottom: none;
     width: 202px;
   }
 }

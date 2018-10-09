@@ -69,16 +69,40 @@
 
 @media (min-width: 768px) {
   .slim__title {
+    margin-bottom: 25px;
     padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      top: 80px;
+      left: 476px;
+      height: 194px;
+      width: 140px;
+      background-size: 140px 194px;
+    }
   }
 
   .slim__description {
-    margin-left: 53px;
+    margin-bottom: 34px;
+    margin-left: 52px;
+    padding-right: 245px;
     border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .slim__link {
-    margin-left: 53px;
+    margin-left: 52px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
