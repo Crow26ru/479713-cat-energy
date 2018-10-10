@@ -156,7 +156,25 @@
     background-color: #f2f2f2;
 
     &--all {
+      border: 1px solid #e6e6e6;
+      padding-left: 37px;
+      padding-right: 37px;
       background-color: #ffffff;
+
+      &::before {
+        top: 54px;
+        left: 132px;
+        width: 60px;
+        height: 60px;
+        background-image: url(../../img/icon-plus.svg);
+        background-repeat: no-repeat;
+        background-size: 60px 60px;
+      }
+    }
+
+    &:nth-last-of-type(2),
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 
@@ -179,14 +197,30 @@
     margin: 0 auto;
     padding-right: 0;
     padding-bottom: 18px;
-    width: 130px;
+    width: 135px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+
+    &--all {
+      margin-bottom: 6px;
+    }
   }
-  
+
+  .catalog__text {
+    margin: 0 auto;
+    margin-bottom: 85px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   .catalog__btn {
     margin-bottom: 13px;
+
+    &--all {
+      margin-bottom: 0;
+    }
   }
 }
 
