@@ -12,6 +12,17 @@
   color: #111111;
 }
 
+.description__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description__item {
+  margin: 0;
+  padding: 0;
+}
+
 .description__text {
   position: relative;
   margin-top: 0;
@@ -67,11 +78,6 @@
 
 @media (min-width: 768px) {
   .description {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-wrap: wrap;
     border-bottom: 1px solid #e6e6e6;
     width: 708px;
   }
@@ -83,44 +89,45 @@
     line-height: 60px;
   }
 
+  .description__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+
+  .description__item {
+    margin-bottom: 135px;
+    width: 324px;
+
+    &:nth-of-type(odd) {
+      margin-right: 59px;
+    }
+
+    &:nth-last-of-type(2),
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   .description__text {
-    width: 354px;
+    margin-bottom: 0;
     padding-left: 0;
+    padding-right: 65px;
     padding-top: 110px;
     font-size: 16px;
     line-height: 24px;
 
-     &::before {
-       width: 80px;
-       height: 80px;
-       background-position: 15px 15px;
-    }
-
-    &--leaf {
-      margin-right: 173px;
-      width: 210px;
-    }
-    
-    &--powder {
-      width: 250px;
-    }
-
-    &--dinin {
-      margin-right: 143px;
-      width: 240px;
-    }
-
-    &--clock {
-      width: 260px;
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: 15px 15px;
     }
 
     &--clock br {
       display: block;
-    }
-
-    &--leaf,
-    &--powder {
-      margin-bottom: 135px;
     }
   }
 }
