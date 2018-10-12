@@ -68,6 +68,32 @@
 
 @media (min-width: 1440px) {
   .navigation {
-    width: 610px;
+    padding-left: 131px;
+    width: 479px;
+  }
+
+  .navigation__list {
+    justify-content: flex-start;
+  }
+
+  .navigation__item {
+    margin-left: 33px;
+    padding-top: 20px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }    
+  }
+
+  .navigation__item .navigation__link {
+    font-size: 20px;
+    color: #ffffff;
+
+    &--active {
+      display: block;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ffffff;
+      box-shadow: none;
+    }
   }
 }
