@@ -492,16 +492,17 @@
   }
 
   .form__cat-info {
+    padding-left: 2px;
     padding-bottom: 0;
-    width: 570px;
+    width: 568px;
   }
 
   .form__program {
     margin-left: 0;
     margin-right: 0;
-    padding-top: 35px;
+    padding-top: 33px;
     padding-bottom: 35px;
-    width: 568px;
+    width: 528px;
   }
 
   .form__wrapper {
@@ -525,6 +526,11 @@
 
     &--bonus {
       width: 245px;
+      
+      &:nth-last-of-type(2),
+      &:last-of-type {
+        margin-bottom: 52px;
+      }
     }
   }
 
@@ -538,11 +544,21 @@
       flex-grow: 0;
       flex-shrink: 0;
       width: 100%;
+      margin-top: 69px;
     }
 
     &--comment,
     &--bonus {
       width: 100%;
+    }
+
+    &--comment {
+      margin-top: 47px;
+    }
+
+    &--bonus {
+      margin-top: 66px;
+      margin-bottom: 20px;
     }
   }
 
@@ -551,7 +567,9 @@
   }
 
   .form__button {
-    width: 570px;
+    margin-right: 82px;
+    padding-left: 8px;
+    width: 568px;
   }
 
   .form__text {
@@ -561,6 +579,22 @@
   .form__label {
     &--checkbox {
       padding-left: 59px;
+    }
+
+    &--checkbox {
+      padding-left: 58px;
+    }
+  }
+
+  .form__input {
+    &--email {
+      margin-left: 21px;
+      padding-left: 18px;
+    }
+
+    &--phone {
+      margin-left: 17px;
+      padding-left: 18px;
     }
   }
 }

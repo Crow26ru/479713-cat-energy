@@ -57,19 +57,21 @@
     width: 1220px;
     padding-top: 54px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -109px;
-      z-index: -1;
-      display: block;
-      width: 720px;
-      height: 696px;
-      background-color: #65a93c;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 720px 696px;
+    &--index {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -109px;
+        z-index: -1;
+        display: block;
+        width: 720px;
+        height: 696px;
+        background-color: #65a93c;
+        background-image: url("../../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: 720px 696px;
+      }
     }
   }
 
