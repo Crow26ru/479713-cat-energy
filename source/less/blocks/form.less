@@ -462,6 +462,27 @@
     &--extend {
       padding-bottom: 66px;
     }
+
+    &::before {
+      top: 50px;
+      left: calc((100vw - 100%) / 2 * (-1));
+      width: 100vw;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: -2px;
+      width: 39px;
+      height: 36px;
+      z-index: 2;
+      background-color: #ffffff;
+    }
+  }
+
+  .form__legend span {
+    padding-right: 35px;
   }
 
   .form__comment {
