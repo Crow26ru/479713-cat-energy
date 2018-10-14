@@ -14,12 +14,19 @@
     border: 1px solid #cdcdcd;
     border-radius: 2px;
   }
+
+  &:last-of-type {
+    &::before {
+      left: -2px;
+    }
+  }
 }
 
 .cell__bold {
   margin: 0;
-  margin-top: 13px;
-  margin-bottom: 10px;
+  margin-top: 14px;
+  margin-bottom: 9px;
+  padding-left: 1px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -27,6 +34,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+
+  &--second {
+    padding-right: 2px;
+  }
 }
 
 .cell__small {
@@ -35,10 +46,53 @@
   margin: 0;
   margin-left: 18px;
   margin-right: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding: 0 12px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   background: #f2f2f2;
+
+  &--second {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cell {
+    flex-basis: 160px;
+
+    &::before {
+      width: 160px;
+      height: 70px;
+    }
+  }
+
+  .cell__bold {
+    margin-top: 16px;
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 36px;
+
+    &--second {
+      padding-right: 3px;
+    }
+  }
+
+  .cell__small {
+    margin-left: 23px;
+    padding: 0;
+    width: 115px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #f2f2f2;
+
+    &--second {
+      margin-left: 8px;
+      margin-right: 5px;
+      padding-right: 8px;
+      padding-left: 7px;
+      width: 127px;
+    }
+  }
 }

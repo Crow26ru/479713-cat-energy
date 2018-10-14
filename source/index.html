@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header-page">
+    <header class="header-page header-page--index">
       <h1 class="visually-hidden">Интернет-магазин Cat Enegry</h1>
       <a class="header-page__logo header-page__logo--link">
         <img class="logo header-page__logo" src="img/logo-mobile.svg" height="38" width="191" alt="Cat Energy">
@@ -49,11 +49,20 @@
       </section>
       <section class="description content__description">
         <h2 class="description__title">Как это работает</h2>
-        <p class="description__text description__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
-        <p class="description__text description__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        <p class="description__text description__text--dinin">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        <p class="description__text description__text--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        <!--Иконки вставлю пвсевдоэлементами p::before-->
+        <ul class="description__list">
+          <li class="description__item">
+            <p class="description__text description__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="description__item">
+            <p class="description__text description__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="description__item">
+            <p class="description__text description__text--dinin">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="description__item">
+            <p class="description__text description__text--clock">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+          </li>
+        </ul>
       </section>
       <section class="example content__example">
         <div class="example__wrapper">
@@ -66,8 +75,8 @@
                 <p class="cell__small">снижение веса</p>
               </div>
               <div class="cell example__right-cell">
-                <p class="cell__bold">60 дней</p>
-                <p class="cell__small">затрачено времени</p>
+                <p class="cell__bold cell__bold--second">60 дней</p>
+                <p class="cell__small cell__small--second">затрачено времени</p>
               </div>
             </div>
             <p class="example__cost">Затраты на питание: <span class="example__cost-number">15 000 руб.</span></p>
@@ -85,8 +94,8 @@
       </section>
       <section class="map content__map">
         <div class="map__wrapper-text">
-          <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="map__title">Приглашаем&nbsp;<br>к сотрудничеству дилеров!</h2>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span class="map__address-indent">Санкт-Петербург</span></p>
         </div>
         <div class="map__wrapper">
           <img class="map__image no-js" src="img/bg-map-mobile@1x.png" height="400" width="320" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">

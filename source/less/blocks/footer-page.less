@@ -5,18 +5,17 @@
 .footer-page__wrapper {
   margin: 0 auto;
   width: 320px;
-  outline: 5px solid white;
 }
 
 .footer-page__logo-wrapper {
   margin: 0 20px;
   padding-top: 39px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .footer-page__logo {
-  outline: 5px solid blue;
+  margin: 0 auto;
 
   &--link {
     display: block;
@@ -25,19 +24,22 @@
 }
 
 .footer-page__social {
-  outline: 5px solid yellow;
+  margin: 0 auto;
 }
 
 .footer-page__author {
   margin: 0 20px;
-  outline: 5px solid brown;
+  margin-left: 19px;
+  padding: 22px 0;
 }
 
 @media (min-width: 768px) {
+  .footer-page {
+    padding: 25px 0;
+  }
+
   .footer-page__wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-grow: 0;
     flex-shrink: 0;
     width: 708px;
@@ -49,14 +51,20 @@
   }
 
   .footer-page__logo-wrapper {
+    margin-left: -1px;
+    border-bottom: none;
     width: 132px;
   }
 
   .footer-page__social {
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 83px;
     width: 324px;
   }
 
   .footer-page__author {
+    margin-left: 51px;
     width: 162px;
   }
 }
@@ -67,20 +75,34 @@
   }
 
   .footer-page__wrapper {
+    justify-content: space-between;
     width: 1220px;
+  }
+
+  .footer-page__logo {
+    margin-right: auto;
+    margin-left: 0;
+    height: 24px;
+
+    &--link {
+      margin-top: 19px;
+    }
   }
 
   .footer-page__logo-wrapper,
   .footer-page__author {
     margin: 0;
-  }
-
-  .footer-page__logo-wrapper {
     width: 245px;
   }
 
+  .footer-page__logo-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .footer-page__social {
-    width: 570px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .footer-page__author {

@@ -4,7 +4,7 @@
 
 .description__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -12,58 +12,145 @@
   color: #111111;
 }
 
+.description__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description__item {
+  margin: 0;
+  padding: 0;
+}
+
 .description__text {
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
-  padding-left: 100px;
+  padding-left: 80px;
   min-height: 60px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     display: block;
     height: 60px;
     width: 60px;
     background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-position: 5px 4px;
+      background-image: url("../../img/advantage-powder@1x.png");
+    }
+  }
+
+  &--dinin {
+    &::before {
+      background-position: 4px 5px;
+      background-image: url("../../img/advantage-dining@1x.png");
+    }
+  }
+
+  &--clock {
+    margin-bottom: 0;
+
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
+    }
+  }
+
+  &--clock br {
+    display: none;
   }
 }
 
 @media (min-width: 768px) {
   .description {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-wrap: wrap;
+    border-bottom: 1px solid #e6e6e6;
     width: 708px;
   }
 
   .description__title {
+    margin-bottom: 74px;
     width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+
+  .description__item {
+    margin-bottom: 135px;
+    width: 324px;
+
+    @media (max-width: 1439px) {
+      &:nth-of-type(odd) {
+        margin-right: 59px;
+      }
+
+      &:nth-last-of-type(2),
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .description__text {
-    width: 354px;
+    margin-bottom: 0;
     padding-left: 0;
+    padding-right: 65px;
     padding-top: 110px;
+    font-size: 16px;
+    line-height: 24px;
 
-    &--leaf,
-    &--powder {
-      margin-bottom: 140px;
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: 15px 15px;
+    }
+
+    &--clock br {
+      display: block;
     }
   }
 }
 
 @media (min-width: 1440px) {
   .description {
+    border-bottom: none;
     width: 1220px;
   }
 
-  .description__text {
+  .description__item {
+    margin-bottom: 20px;
+    margin-right: 80px;
     width: 245px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .description__text {
     margin-bottom: 0;
+    padding-right: 0;
   }
 }

@@ -3,7 +3,20 @@
   background-color: #ffffff;
 
   &--bg-color {
+    position: relative;
     background-color: #f2f2f2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc((100vw - 320px) / 2 * (-1));
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      background: #f2f2f2;
+    }
   }
 }
 
@@ -14,6 +27,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #111111;
 }
 
@@ -28,14 +42,15 @@
   position: relative;
   z-index: 0;
   display: block;
-  height: 400px;
+  height: 362px;
   width: 320px;
+  overflow: hidden;
 
   &::after {
     content: "";
     position: absolute;
-    top: 178px;
-    left: 130px;
+    top: 139px;
+    left: 129px;
     z-index: 1;
     display: block;
     height: 53px;
@@ -51,11 +66,14 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 0;
-  margin: 0 20px;
-  padding-bottom: 24px;
+  margin: 0 19px;
+  padding-bottom: 26px;
 }
 
 .map__image {
+  position: absolute;
+  top: -38px;
+  left: 0;
   display: block;
   height: 400px;
   width: 320px;
@@ -64,21 +82,78 @@
 @media (min-width: 768px) {
   .map {
     width: 768px;
+
+    &::before {
+      left: calc((100vw - 768px) / 2 * (-1));
+    }
   }
 
   .map__wrapper-text {
     margin: 0 30px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
   }
 
   .map__title {
-    text-transform: uppercase;
+    flex-basis: 155px;
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .map__title br {
+    display: block;
+  }
+
+  .map__address {
+    flex-basis: 170px;
+    margin-top: -2px;
+    margin-right: 42px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .map__address-indent {
+    display: block;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .map__image {
+    top: -4px;
+    width: 767px;
+    height: 400px;
+  }
+
+  .map__wrapper {
+    width: 100%;
+    height: 396px;
+
+    &::after {
+      top: 146px;
+      left: 322px;
+      width: 113px;
+      height: 106px;
+    }
   }
 }
 
 @media (min-width: 1440px) {
   .map {
     width: 1440px;
+
+    &::before {
+      left: calc((100vw - 1440px) / 2 * (-1));
+    }
+  }
+
+  .map__title {
+    padding-left: 76px;
+  }
+
+  .map__address {
+    margin-right: 74px;
+    text-align: left;
   }
 
   .map__wrapper-text {
@@ -93,6 +168,18 @@
   }
 
   .map__wrapper {
-    margin-top: -280px;
+    margin-top: -298px;
+    height: 400px;
+
+    &::after {
+      top: 150px;
+      left: 998px;
+    }
+  }
+
+  .map__image {
+    position: static;
+    width: 1440px;
+    height: 400px;
   }
 }

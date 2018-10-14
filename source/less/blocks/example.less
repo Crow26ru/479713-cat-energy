@@ -4,13 +4,14 @@
 
 .example__wrapper {
   margin: 0 auto;
-  width: 280px;
-  outline: 5px solid blue;
+  width: 320px;
 }
 
 .example__title {
   margin: 0;
   margin-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -21,6 +22,8 @@
 .example__text {
   margin: 0;
   margin-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .example__cell-wrapper {
@@ -28,11 +31,13 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 0;
+  padding: 0 20px;
+  padding-top: 3px;
 }
 
 .example__cost {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
@@ -45,12 +50,15 @@
 }
 
 .example__btn {
+  margin-left: 57px;
+  width: 50px;
   border: none;
-  border-bottom: 1px dashed #bebebe;
+  border-bottom: 1px dotted #bebebe;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  background-color: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -62,11 +70,46 @@
     border-bottom: none;
     outline: 0;
   }
+
+  &--after {
+    margin-left: 8px;
+  }
+}
+
+.example__controls {
+  margin-top: 31px;
+}
+
+.example__range {
+  display: inline-block;
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  width: 82px;
+  height: 12px;
+  line-height: 0;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
   .example {
-    background-color: #ffffff;
+    position: relative;
+    background-color: transparent;
+    /*Временный вариант до оживления слайдера*/
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 462px;
+      background-color: #f2f2f2;
+    }
   }
 
   .example__wrapper {
@@ -81,16 +124,28 @@
 
   .example__title,
   .example__text {
+    padding-left: 0;
+    padding-right: 0;
     width: auto;
   }
 
-  .example__cell-wrapper {
-    width: 366px;
+  .example__title {
+    margin-bottom: 64px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
-  .example__cost {
-    width: 122px;
-    text-align: right;
+  .example__text {
+    margin-bottom: 50px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__cell-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    width: 366px;
   }
 
   .example__left-column {
@@ -99,26 +154,73 @@
     flex-wrap: wrap;
     flex-grow: 0;
     flex-shrink: 0;
+    margin-bottom: 62px;
   }
 
-  .example__image,
-  .example__controls {
-    margin: 0 auto;
+  .example__cost {
+    margin-top: 14px;
+    margin-right: 1px;
+    width: 175px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .example__cost-number {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .example__image {
+    margin-bottom: 19px;
+    margin-left: 16px;
+    margin-right: auto;
+    width: 690px;
+    height: 517px;
   }
 
   .example__controls {
     display: flex;
-    justify-content: space-between;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 590px;
+    width: 706px;
+    margin: 0 auto;
+  }
+
+  .example__btn {
+    margin-left: 66px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--after {
+      margin-left: 21px;
+    }
+  }
+
+  .example__range {
+    margin-top: 8px;
+    margin-left: 22px;
+    border: none;
+    border-radius: 3px;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
   }
 }
 
 @media (min-width: 1440px) {
+  .example {
+    &::before {
+      height: 463px;
+    }
+  }
+
   .example__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     flex-grow: 0;
     flex-shrink: 0;
@@ -126,7 +228,13 @@
   }
 
   .example__title {
+    margin-bottom: 146px;
     width: 100%;
+  }
+
+  .example__text {
+    margin-bottom: 68px;
+    padding-right: 175px;
   }
 
   .example__left-column,
@@ -134,17 +242,46 @@
     width: 610px;
   }
 
+  .example__left-cell {
+    margin-right: 46px;
+  }
+
+  .example__right-column {
+    padding-top: 296px;
+  }
+
   .example__cell-wrapper {
     justify-content: flex-start;
+    padding-top: 0;
     width: 100%;
   }
 
   .example__cost {
-    width: 325px;
+    margin: 0;
+    margin-top: 36px;
+    width: 330px;
     text-align: left;
   }
 
   .example__cost-number {
-    margin-left: 137px;
+    display: inline;
+    margin-top: 0;
+    margin-left: 60px;
+  }
+
+  .example__image {
+    position: absolute;
+    top: -55px;
+    right: -40px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .example__btn {
+    margin-left: 38px;
+
+    &--after {
+      margin-left: 21px;
+    }
   }
 }

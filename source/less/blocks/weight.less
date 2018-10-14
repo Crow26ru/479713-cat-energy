@@ -1,24 +1,51 @@
 .weight {
+  position: relative;
   background-color: #f2f2f2;
 }
 
 .weight__title {
   margin: 0;
-  margin-bottom: 30px;
-  padding-left: 90px;
+  margin-bottom: 29px;
+  padding-left: 91px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 24px;
+    z-index: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 35px;
+    z-index: 1;
+    display: block;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-size: 67px 28px;
+  }
 }
 
 .weight__description {
   margin: 0;
   margin-left: 20px;
   margin-right: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -26,7 +53,7 @@
 .weight__link {
   position: relative;
   display: block;
-  margin-left: 20px;
+  margin-left: 19px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -44,21 +71,74 @@
 
 @media (min-width: 768px) {
   .weight__title {
+    margin-bottom: 25px;
     padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 91px;
+      left: 448px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      top: 135px;
+      left: 412px;
+      height: 112px;
+      width: 268px;
+      background-size: 268px 112px;
+    }
   }
 
   .weight__description {
-    margin-left: 53px;
+    margin-bottom: 34px;
+    margin-left: 52px;
+    padding-right: 285px;
     border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .weight__link {
-    margin-left: 53px;
+    margin-left: 52px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:active {
+      color: #b7b7b7;
+    }
   }
 }
 
 @media (min-width: 1440px) {
   .weight {
     width: 570px;
+  }
+
+  .weight__title {
+    margin-bottom: 74px;
+    padding-left: 214px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 69px;
+      left: 34px;
+      height: 56px;
+      width: 134px;
+      background-size: 134px 56px;
+    }
+  }
+
+  .weight__description {
+    margin-bottom: 9px;
+    padding-right: 20px;
   }
 }
