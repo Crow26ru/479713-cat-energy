@@ -104,12 +104,30 @@
   .header-page .navigation__link {
     font-size: 20px;
     color: #111111;
+
+    &:hover,
+    &:focus {
+      color: fade(#111111, 60%);
+    }
+
+    &:active {
+     color: fade(#111111, 30%);
+    }
   }
 
   .header-page--index .navigation__link {
     font-size: 20px;
     color: #ffffff;
 
+    &:hover,
+    &:focus {
+      color: fade(#ffffff, 60%);
+    }
+
+    &:active {
+     color: fade(#ffffff, 30%);
+    }
+    
     &--active {
       border-bottom: 2px solid #ffffff;
     }
