@@ -19,6 +19,13 @@
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 320px auto;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    &::before {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
