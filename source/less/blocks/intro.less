@@ -6,25 +6,27 @@
   width: 280px;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    min-height: 305px;
-    width: 100%;
-    background-color: #65a93c;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 320px auto;
-  }
-
-  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  @media (max-width: 767px) {
     &::before {
-      background-image: url("../../img/index-background-mobile@2x.jpg");
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      min-height: 305px;
+      width: 100%;
+      background-color: #65a93c;
+      background-image: url("../../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 320px auto;
+    }
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      &::before {
+        background-image: url("../../img/index-background-mobile@2x.jpg");
+      }
     }
   }
 }
