@@ -9,7 +9,11 @@
   <body>
     <header class="header-page">
       <a class="header-page__logo header-page__logo--link" href="index.html">
-        <img class="logo header-page__logo" src="img/logo-mobile.svg" height="38" width="191" alt="Cat Energy">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+          <img class="logo header-page__logo" src="img/logo-mobile.svg" height="38" width="191" alt="Cat Energy">
+        </picture>
       </a>
       <button class="header-page__menu" type="button">Закрыть</button>
       <nav class="navigation header-page__navigation">
