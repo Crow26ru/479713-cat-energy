@@ -294,20 +294,23 @@
   display: block;
 }
 
-.form__input--radio:focus + .form__label--radio::before,
-.form__input--checkbox:focus + .form__label--checkbox::before {
-  border-color: #bababa;
-  outline: thin dotted;
-}
-
 .form__input--radio:hover + .form__label--radio::before,
 .form__input--checkbox:hover + .form__label--checkbox::before {
   border-color: #bababa;
 }
 
 .form__input--text-error {
-  border: 2px solid #ff8888;
-  padding-left: 14px;
+  border-color: #ff8888;
+  box-shadow: inset 0 0 0 1px #ff8888;
+}
+
+.form__input:focus,
+.form__comment:focus,
+.form__input--radio:focus + .form__label--radio::before,
+.form__input--checkbox:focus + .form__label--checkbox::before {
+  border-color: #444444;
+  box-shadow: inset 0 0 0 1px #444444;
+  outline: none;
 }
 
 @media (min-width: 768px) {
