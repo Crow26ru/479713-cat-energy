@@ -61,6 +61,12 @@
     background-size: cover;
   }
 
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    &::before {
+      background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -159,6 +165,12 @@
       background-size: 708px 200px;
     }
 
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      &::before {
+        background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      }
+    }
+
     &::after {
       left: 92px;
     }
@@ -202,6 +214,12 @@
       height: 289px;
       background-image: url("../../img/gift-photo-desktop@1x.jpg");
       background-size: 245px 289px;
+    }
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      &::before {
+        background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      }
     }
 
     &::after {

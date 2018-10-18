@@ -6,19 +6,28 @@
   width: 280px;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    min-height: 305px;
-    width: 100%;
-    background-color: #65a93c;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      min-height: 305px;
+      width: 100%;
+      background-color: #65a93c;
+      background-image: url("../../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 320px auto;
+    }
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      &::before {
+        background-image: url("../../img/index-background-mobile@2x.jpg");
+      }
+    }
   }
 }
 
@@ -59,6 +68,7 @@
 
 @media (min-width: 768px) {
   .intro__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 708px;
@@ -90,6 +100,12 @@
   }
 
   .intro__btn {
+    @media (max-width: 1439px) {
+      position: absolute;
+      top: 203px;
+      left: 0;
+    }
+
     margin: 0;
     margin-top: 26px;
     margin-left: 89px;
@@ -104,7 +120,7 @@
   .intro__image {
     position: relative;
     z-index: -1;
-    margin-top: -80px;
+    margin-top: -2px;
     margin-bottom: 0;
     margin-left: -1px;
     width: 709px;
@@ -133,7 +149,7 @@
 
   .intro__image {
     position: absolute;
-    top: 0;
+    top: -78px;
     left: 451px;
     width: 552px;
     height: 499px;

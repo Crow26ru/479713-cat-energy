@@ -11,6 +11,14 @@
   width: 191px;
   height: 38px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &--link {
     display: block;
@@ -36,10 +44,12 @@
     flex-grow: 0;
     flex-shrink: 0;
     width: 708px;
+    margin-bottom: 5px;
     padding-top: 20px;
   }
 
   .header-page__logo {
+    margin-top: -5px;
     margin-right: 96px;
     padding-left: 0;
     width: 173px;
@@ -55,8 +65,9 @@
   .header-page {
     position: relative;
     justify-content: flex-start;
-    width: 1220px;
+    margin-bottom: 7px;
     padding-top: 54px;
+    width: 1220px;
 
     &--index {
       &::before {
@@ -73,10 +84,17 @@
         background-repeat: no-repeat;
         background-size: 720px 696px;
       }
+
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        &::before {
+          background-image: url("../../img/index-background-desktop@2x.jpg");
+        }
+      }
     }
   }
 
   .header-page__logo {
+    margin-top: -7px;
     margin-right: auto;
     border-bottom: none;
     width: 202px;

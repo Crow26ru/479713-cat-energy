@@ -64,8 +64,29 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3px;
+    left: 96px;
+    width: 25px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 32px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -106,8 +127,9 @@
     font-size: 20px;
     line-height: 20px;
 
-    &:active {
-      color: #b7b7b7;
+    &::after {
+      top: 5px;
+      left: 126px;
     }
   }
 }
