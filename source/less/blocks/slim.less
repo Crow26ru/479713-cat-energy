@@ -62,12 +62,29 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3px;
+    left: 98px;
+    width: 25px;
+    height: 11px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 32px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   &:active {
-    color: #b7b7b7;
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -107,6 +124,11 @@
     margin-left: 52px;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 5px;
+      left: 132px;
+    }
   }
 }
 
