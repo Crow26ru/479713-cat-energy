@@ -13,9 +13,22 @@
   display: block;
   flex-basis: 54px;
   height: 62px;
+  color: #666666;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
+  fill: currentColor;
+
   @media (max-width: 767px) {
     &--vk {
       margin-top: 24px;
@@ -42,6 +55,29 @@
   .social {
     border-bottom: none;
   }
+
+  .social__icon {
+    &--vk {
+      margin-top: 23px;
+      margin-left: 11px;
+      width: 30.004px;
+      height: 15.761px;
+    }
+    
+    &--instagram {
+      margin-top: 20px;
+      margin-left: 15px;
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      margin-top: 17px;
+      margin-left: 13px;
+      width: 13.518px;
+      height: 27.75px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -52,5 +88,19 @@
     flex-grow: 0;
     flex-shrink: 0;
     width: 570px;
+  }
+
+  .social__icon {
+    &--vk {
+      margin-top: 21px;
+    }
+    
+    &--instagram {
+      margin-top: 18px;
+    }
+
+    &--facebook {
+      margin-top: 15px;
+    }
   }
 }
