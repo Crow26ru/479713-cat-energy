@@ -141,16 +141,13 @@
 }
 
 @media (min-width: 1440px) {
-  .map {
-    width: 1440px;
-
-    &::before {
-      left: calc((100vw - 1440px) / 2 * (-1));
-    }
-  }
-
   .map__title {
     padding-left: 76px;
+  }
+
+  .map__top-wrapper {
+    margin: 0 auto;
+    width: 1440px;
   }
 
   .map__address {
@@ -172,6 +169,7 @@
   .map__wrapper {
     margin-top: -298px;
     height: 400px;
+    width: 1440px;
 
     &::after {
       top: 150px;
