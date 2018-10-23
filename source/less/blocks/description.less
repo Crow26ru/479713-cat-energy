@@ -123,8 +123,46 @@
   }
 
   .description__item {
+    position: relative;
+    z-index: 1;
     margin-bottom: 135px;
     width: 324px;
+    background-color: transparent;
+
+    &::before {
+      content: attr(data-num);
+      position: absolute;
+      top: -42px;
+      right: 80px;
+      z-index: 0;
+      display: block;
+      width: 130px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: 400;
+      color: #f2f2f2;
+    }
+
+    @media (max-width: 1439px) {
+      &:first-of-type {
+        &::before {
+          right: 76px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        &::before {
+          right: 82px;
+        }
+      }
+
+      &:nth-of-type(3) {
+        &::before {
+          right: 81px;
+        }
+      }
+    }
 
     @media (max-width: 1439px) {
       &:nth-of-type(odd) {
@@ -171,6 +209,22 @@
 
     &:nth-of-type(4n) {
       margin-right: 0;
+    }
+
+    &::before {
+      right: 2px;
+    }
+
+    &:first-of-type {
+      &::before {
+        right: -3px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        right: 4px;
+      }
     }
   }
 

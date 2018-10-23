@@ -3,40 +3,41 @@
   background-color: #f2f2f2;
 }
 
+.slim__title-wrapper {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+.slim__icon {
+  position: relative;
+  margin-left: 22px;
+}
+
+.slim__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
+.slim__cat {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  width: 35px;
+  height: 49px;
+}
+
 .slim__title {
-  margin: 0;
-  margin-bottom: 29px;
-  padding-left: 91px;
+  margin: 6px 0 29px 19px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 22px;
-    display: block;
-    width: 50px;
-    height: 50px;
-  }
-
-  &::before {
-    top: 25px;
-    z-index: 0;
-    border-radius: 50%;
-    background-color: #68b738;
-  }
-
-  &::after {
-    top: 22px;
-    z-index: 1;
-    background-image: url("../img/icon-cat-slim.svg");
-    background-size: 50px 50px;
-  }
 }
 
 .slim__description {
@@ -89,26 +90,37 @@
 }
 
 @media (min-width: 768px) {
-  .slim__title {
-    margin-bottom: 25px;
-    padding-left: 53px;
-    font-size: 36px;
-    line-height: 36px;
+  @media (max-width: 1439px) {
+    .slim__title-wrapper {
+      position: relative;
+      display: block;
+    }
 
-    &::before {
-      top: 92px;
-      left: 446px;
+    .slim__icon {
+      position: absolute;
+      top: 15px;
+      right: 62px;
+    }
+
+    .slim__circle {
       width: 200px;
       height: 200px;
     }
 
-    &::after {
-      top: 80px;
-      left: 476px;
-      height: 194px;
+    .slim__cat {
+      top: -12px;
+      left: 30px;
       width: 140px;
-      background-size: 140px 194px;
+      height: 194px;
     }
+  }
+
+  .slim__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .slim__description {
@@ -138,24 +150,26 @@
     width: 570px;
   }
 
+  .slim__icon {
+    margin-left: 52px;
+  }
+
+  .slim__circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .slim__cat {
+    top: -6px;
+    left: 14px;
+    width: 70px;
+    height: 97px;
+  }
+
   .slim__title {
+    margin-top: 30px;
+    margin-left: 62px;
     margin-bottom: 74px;
-    padding-left: 214px;
-
-    &::before {
-      top: 47px;
-      left: 52px;
-      width: 100px;
-      height: 100px;
-    }
-
-    &::after {
-      top: 41px;
-      left: 66px;
-      height: 97px;
-      width: 70px;
-      background-size: 70px 97px;
-    }
   }
 
   .slim__description {
