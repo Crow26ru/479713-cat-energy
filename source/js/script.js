@@ -14,3 +14,9 @@ menuBtn.addEventListener("click", function(e) {
   menuBtn.classList.toggle("header-page__menu--open");
   mobileMenu.classList.toggle("navigation__list--open");
 });
+
+menuBtn.addEventListener("touchend", function(e) {
+  e.preventDefault();
+  menuBtn.classList.toggle("header-page__menu--open");
+  mobileMenu.classList.toggle("navigation__list--open");
+});
