@@ -49,7 +49,7 @@
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: none;
     position: absolute;
     top: 139px;
     left: 129px;
@@ -80,8 +80,13 @@
   position: absolute;
   top: -38px;
   left: 0;
-  display: block;
+  display: none;
   height: 400px;
+  width: 320px;
+}
+
+.map__interactive-map {
+  border: none;
   width: 320px;
 }
 
@@ -138,6 +143,11 @@
       height: 106px;
     }
   }
+
+  .map__interactive-map {
+    width: 768px;
+    height: 396px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -181,5 +191,10 @@
     position: static;
     width: 1440px;
     height: 400px;
+  }
+
+  .map__interactive-map {
+    width: 1440px;
+    height: 401px;
   }
 }
