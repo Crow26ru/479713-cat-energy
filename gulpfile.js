@@ -13,9 +13,11 @@ var webp = require("gulp-webp");
 var sprite = require("gulp-svgstore");
 var del = require("del");
 var minify = require("gulp-minify");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 

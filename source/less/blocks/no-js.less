@@ -1,3 +1,24 @@
+@media (max-width: 767px) {
+  .no-js-btn-nav {
+    display: none;
+  }
+
+  .no-js-nav,
+  .navigation__list--open {
+    display: block;
+  }
+}
+
+.no-js-wrapper-map {
+  &::after {
+    content: "";
+  }
+}
+
+.no-js-image-map {
+  display: block;
+}
+
 .no-js-map {
   display: none;
 }

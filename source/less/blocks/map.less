@@ -1,23 +1,24 @@
 .map {
-  width: 320px;
+  width: 100%;
   background-color: #ffffff;
 
   &--bg-color {
     position: relative;
-    background-color: #f2f2f2;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: calc((100vw - 320px) / 2 * (-1));
-      z-index: -1;
-      display: block;
-      width: 100vw;
-      height: 100%;
-      background: #f2f2f2;
-    }
   }
+}
+
+.map__top-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
+.map__bottom-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 .map__title {
@@ -42,12 +43,13 @@
   position: relative;
   z-index: 0;
   display: block;
-  height: 362px;
+  margin: 0 auto;
   width: 320px;
+  height: 362px;
   overflow: hidden;
 
   &::after {
-    content: "";
+    content: none;
     position: absolute;
     top: 139px;
     left: 129px;
@@ -66,31 +68,36 @@
   justify-content: space-between;
   flex-grow: 0;
   flex-shrink: 0;
-  margin: 0 19px;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-left: 19px;
+  padding-right: 20px;
   padding-bottom: 26px;
+  width: 281px;
 }
 
 .map__image {
   position: absolute;
   top: -38px;
   left: 0;
-  display: block;
+  display: none;
   height: 400px;
   width: 320px;
 }
 
+.map__interactive-map {
+  border: none;
+  width: 320px;
+}
+
 @media (min-width: 768px) {
-  .map {
-    width: 768px;
-
-    &::before {
-      left: calc((100vw - 768px) / 2 * (-1));
-    }
-  }
-
   .map__wrapper-text {
-    margin: 0 30px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-left: 71px;
+    padding-right: 72px;
     padding-bottom: 58px;
+    width: 625px;
   }
 
   .map__title {
@@ -126,7 +133,7 @@
   }
 
   .map__wrapper {
-    width: 100%;
+    width: 768px;
     height: 396px;
 
     &::after {
@@ -136,19 +143,21 @@
       height: 106px;
     }
   }
+
+  .map__interactive-map {
+    width: 768px;
+    height: 396px;
+  }
 }
 
 @media (min-width: 1440px) {
-  .map {
-    width: 1440px;
-
-    &::before {
-      left: calc((100vw - 1440px) / 2 * (-1));
-    }
-  }
-
   .map__title {
     padding-left: 76px;
+  }
+
+  .map__top-wrapper {
+    margin: 0 auto;
+    width: 1440px;
   }
 
   .map__address {
@@ -170,6 +179,7 @@
   .map__wrapper {
     margin-top: -298px;
     height: 400px;
+    width: 1440px;
 
     &::after {
       top: 150px;
@@ -181,5 +191,10 @@
     position: static;
     width: 1440px;
     height: 400px;
+  }
+
+  .map__interactive-map {
+    width: 1440px;
+    height: 401px;
   }
 }
