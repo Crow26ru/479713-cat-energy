@@ -2,11 +2,11 @@ var menuBtn = document.querySelector(".header-page__menu");
 var mobileMenu = document.querySelector(".navigation__list");
 
 if(menuBtn.classList.contains("no-js-btn-nav")) {
-    menuBtn.classList.remove("no-js-btn-nav");
+  menuBtn.classList.remove("no-js-btn-nav");
 }
 
 if(mobileMenu.classList.contains("no-js-nav")) {
-    mobileMenu.classList.remove("no-js-nav");
+  mobileMenu.classList.remove("no-js-nav");
 }
 
 menuBtn.addEventListener("click", function(e) {
