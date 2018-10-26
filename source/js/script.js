@@ -3,6 +3,8 @@ var mobileMenu = document.querySelector(".navigation__list");
 var wrapperMap = document.querySelector(".map__wrapper");
 var imageMap = document.querySelector(".map__image");
 var interactiveMap = document.querySelector(".map__interactive-map");
+var sliderButtonBefore = document.querySelector(".example__btn--before");
+var sliderButtonAfter = document.querySelector(".example__btn--after");
 
 if(menuBtn.classList.contains("no-js-btn-nav")) {
   menuBtn.classList.remove("no-js-btn-nav");
@@ -34,4 +36,44 @@ menuBtn.addEventListener("touchend", function(e) {
   e.preventDefault();
   menuBtn.classList.toggle("header-page__menu--open");
   mobileMenu.classList.toggle("navigation__list--open");
+});
+
+sliderButtonBefore.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  var sliderBar = document.querySelector(".example__range");
+
+  if(sliderBar.classList.contains("example__range--after")) {
+    sliderBar.classList.remove("example__range--after");
+  }
+});
+
+sliderButtonBefore.addEventListener("touchend", function(e) {
+  e.preventDefault();
+
+  var sliderBar = document.querySelector(".example__range");
+
+  if(sliderBar.classList.contains("example__range--after")) {
+    sliderBar.classList.remove("example__range--after");
+  }
+});
+
+sliderButtonAfter.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  var sliderBar = document.querySelector(".example__range");
+
+  if(!sliderBar.classList.contains("example__range--after")) {
+    sliderBar.classList.add("example__range--after");
+  }
+});
+
+sliderButtonAfter.addEventListener("touchend", function(e) {
+  e.preventDefault();
+
+  var sliderBar = document.querySelector(".example__range");
+
+  if(!sliderBar.classList.contains("example__range--after")) {
+    sliderBar.classList.add("example__range--after");
+  }
 });
