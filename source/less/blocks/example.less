@@ -230,6 +230,33 @@
     width: 428px;
     height: 6px;
     background-color: #dcdcdc;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: -14px;
+      left: -14px;
+      z-index: 2;
+      width: 32px;
+      height: 32px;
+      border: 1px solid #cecece;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+    }
   }
 }
 
