@@ -272,6 +272,19 @@
     height: 6px;
     background-color: #dcdcdc;
 
+    &:hover {
+      &::before {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: #68b738;
+        box-shadow: inset 0 0 2px 0 #68b738, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
+
     &::before,
     &::after {
       content: "";
@@ -289,6 +302,7 @@
       height: 32px;
       border: 1px solid #cecece;
       background-color: #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
 
     &::after {
