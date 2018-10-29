@@ -238,6 +238,10 @@ legend {
 // * Remove default vertical scrollbar in IE 8/9/10/11.
 textarea {
   overflow: auto;
+  
+  &::-moz-placeholder {
+    opacity: 1;
+  }
 }
 
 //  * Don't inherit the `font-weight` (applied by a rule above).
