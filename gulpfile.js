@@ -14,9 +14,11 @@ var sprite = require("gulp-svgstore");
 var del = require("del");
 var minify = require("gulp-minify");
 var htmlmin = require("gulp-htmlmin");
+var posthtml = require("gulp-posthtml");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
+    .pipe(posthtml([include()]))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
