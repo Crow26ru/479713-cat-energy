@@ -8,10 +8,10 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <script src="js/picturefill.min.js"></script>
-    <script src="js/svgxuse.min.js"></script>
   </head>
   <body>
     <div class="sprite">
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header-page">
       <a class="header-page__logo header-page__logo--link" href="index.html">
@@ -71,7 +71,7 @@
               <input class="form__input form__input--email" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required>
               <span class="form__svg-cont">
                 <svg class="form__icon form__icon--email" width="17" height="13">
-                  <use xlink:href="img/sprite.svg#icon-mail"/>
+                  <use xlink:href="#icon-mail"/>
                 </svg>
               </span>
             </p>
@@ -80,7 +80,7 @@
               <input class="form__input form__input--phone" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
               <span class="form__svg-cont">
                 <svg class="form__icon form__icon--phone" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"/>
+                  <use xlink:href="#icon-phone"/>
                 </svg>
               </span>
             </p>
@@ -148,19 +148,19 @@
           <a class="social__link social__link--vk" href="#">
             <span class="visually-hidden">Мы во ВКонтакте</span>
             <svg class="social__icon social__icon--vk" width="30" height="16">
-              <use xlink:href="img/sprite.svg#icon-vk"/>
+              <use xlink:href="#icon-vk"/>
             </svg>
           </a>
           <a class="social__link social__link--instagram" href="#">
             <span class="visually-hidden">Мы в Instagram</span>
             <svg class="social__icon social__icon--instagram" width="23" height="23">
-              <use xlink:href="img/sprite.svg#icon-insta"/>
+              <use xlink:href="#icon-insta"/>
             </svg>
           </a>
           <a class="social__link social__link--facebook" href="#">
             <span class="visually-hidden">Мы в Facebook</span>
             <svg class="social__icon social__icon--facebook" width="14" height="28">
-              <use xlink:href="img/sprite.svg#icon-fb"/>
+              <use xlink:href="#icon-fb"/>
             </svg>
           </a>
         </section>
@@ -169,7 +169,7 @@
           <p class="author__text">HTML Academy</p>
           <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс HTML и CSS, уровень 2">
             <svg class="author__svg" height="34" width="27">
-              <use xlink:href="img/sprite.svg#htmlacademy"/>
+              <use xlink:href="#htmlacademy"/>
             </svg>
           </a>
         </section>

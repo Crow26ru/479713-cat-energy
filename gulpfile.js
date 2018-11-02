@@ -15,6 +15,7 @@ var del = require("del");
 var minify = require("gulp-minify");
 var htmlmin = require("gulp-htmlmin");
 var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
@@ -102,5 +103,5 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "html", "css", "js", "sprite"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js"));
 gulp.task("start", gulp.series("build", "server"));
