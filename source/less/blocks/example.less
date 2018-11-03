@@ -341,6 +341,9 @@
 @media (min-width: 1440px) {
   .example {
     background-color: #f2f2f2;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 calc((100% - 1440px) / 2 + 1046px), #eaeaea calc((100% - 1440px) / 2 + 1046px), #eaeaea 100%);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient();
 
     &::before {
       content: none;
