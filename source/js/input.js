@@ -7,7 +7,7 @@ function validEmail(str) {
 }
 
 function validPhone(str) {
-  var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+  var re = /^8 \(\d{3}\) \d{3}-\d{2}-\d{1}\d$/;
   var valid = re.test(str);
   return valid;
 }
