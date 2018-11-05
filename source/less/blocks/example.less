@@ -339,11 +339,12 @@
 }
 
 @media (min-width: 1440px) {
+  @grad: calc((100% - 1440px) / 2 + 1045px);
+  
   .example {
     background-color: #f2f2f2;
-    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 calc((100% - 1440px) / 2 + 1046px), #eaeaea calc((100% - 1440px) / 2 + 1046px), #eaeaea 100%);
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 @grad, #eaeaea @grad, #eaeaea 100%);
     background-repeat: no-repeat;
-    filter: progid:dximagetransform.microsoft.gradient();
 
     &::before {
       content: none;
