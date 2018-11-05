@@ -91,9 +91,17 @@
 }
 
 @media (min-width: 768px) {
+  @media (max-width: 1439px) {
+    .map {
+      &--bg-color .map__wrapper-text {
+        padding-top: 65px;
+      }
+    }
+  }
+
   .map__wrapper-text {
     margin: 0 auto;
-    padding-top: 65px;
+    padding-top: 60px;
     padding-left: 71px;
     padding-right: 72px;
     padding-bottom: 58px;
