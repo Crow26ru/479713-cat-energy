@@ -91,7 +91,7 @@
 }
 
 @media (min-width: 768px) {
-  @media (max-width: 1439px) {
+  @media (max-width: 1299px) {
     .map {
       &--bg-color .map__wrapper-text {
         padding-top: 65px;
@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .map__title {
     padding-left: 5px;
   }
@@ -164,6 +164,7 @@
   .map__top-wrapper {
     margin: 0 auto;
     width: 1440px;
+    overflow: hidden;
   }
 
   .map__address {
@@ -186,6 +187,7 @@
     margin-top: -298px;
     height: 400px;
     width: 1440px;
+    overflow: hidden;
 
     &::after {
       top: 150px;
@@ -197,10 +199,12 @@
     position: static;
     width: 1440px;
     height: 400px;
+    overflow: hidden;
   }
 
   .map__interactive-map {
     width: 1440px;
     height: 401px;
+    overflow: hidden;
   }
 }
