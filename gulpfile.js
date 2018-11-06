@@ -98,6 +98,7 @@ gulp.task("copy", function() {
       "source/fonts/*.{woff,woff2}",
       "source/img/*.{jpg,png}",
       "source/img/logo-*.svg",
+      "source/img/*.webp",
       "source/img/icon-tick.svg",
       "source/img/icon-right-arrow-verylong.svg",
       "source/img/icon-right-arrow-long.svg",
