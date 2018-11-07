@@ -163,8 +163,14 @@
       width: 100%;
     }
 
+    .map__wrapper {
+      &::after {
+        left: calc((100vw - 1440px) / 2 + 998px);
+      }
+    }
+
     .map__image {
-      margin-left: calc((100% - 1440px) / 2);
+      margin-left: calc((100vw - 1440px) / 2);
     }
   }
 
@@ -204,7 +210,7 @@
 
     &::after {
       top: 150px;
-      left: 998px;
+      left: calc((100vw - 1440px) / 2 + 998px);
     }
   }
 
