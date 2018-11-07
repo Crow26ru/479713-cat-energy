@@ -246,10 +246,19 @@
     padding-top: 36px;
   }
 
+  .catalog__list {
+    justify-content: flex-start;
+  }
+
   .catalog__item {
+    margin-right: 80px;
     margin-bottom: 3px;
     padding-bottom: 28px;
     width: 169px;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
 
     &--all {
       &::before {
