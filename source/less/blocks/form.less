@@ -634,11 +634,13 @@
     }
 
     &--bonus {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 80px;
       width: 245px;
 
-      &:nth-last-of-type(2),
-      &:last-of-type {
-        margin-bottom: 52px;
+      &:nth-of-type(4n) {
+        margin-right: 0;
       }
     }
   }
@@ -668,6 +670,7 @@
 
     &--comment,
     &--bonus {
+      justify-content: flex-start;
       width: 100%;
     }
 
@@ -681,8 +684,15 @@
     }
   }
 
+  .form__legend {
+    &--extend {
+      padding-bottom: 46px;
+    }
+  }
+
   .form__bottom {
     margin: 0;
+    margin-top: 52px;
   }
 
   .form__button {
