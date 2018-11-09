@@ -156,24 +156,24 @@
   }
 }
 
-@media (min-width: 1300px) {
-  @media (max-width: 1439px) {
-    .map__wrapper,
-    .map__interactive-map {
-      width: 100%;
-    }
+@media (min-width: 1300px) and (max-width: 1439px) {
+  .map__wrapper,
+  .map__interactive-map {
+    width: 100%;
+  }
 
-    .map__wrapper {
-      &::after {
-        left: calc((100vw - 1440px) / 2 + 998px);
-      }
-    }
-
-    .map__image {
-      margin-left: calc((100vw - 1440px) / 2);
+  .map__wrapper {
+    &::after {
+      left: calc((100vw - 1440px) / 2 + 998px);
     }
   }
 
+  .map__image {
+    margin-left: calc((100vw - 1440px) / 2);
+  }
+}
+
+@media (min-width: 1300px) {
   .map {
     overflow: hidden;
   }
